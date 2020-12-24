@@ -1,0 +1,66 @@
+* {
+    color: var(--primary-color);
+}
+
+.tempurature-container {
+    background-color: var(--card-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 4px 4px rgb(204, 204, 204);
+}
+
+.maintemp-container {
+    display: flex;
+    justify-content: center;
+}
+
+.maintemp-value {
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.maintemp-degrees {
+    font-size: 48px;
+}
+
+.maintemp-ghost {
+    opacity: 0;
+    font-size: 48px;
+}
+
+.feelsliketemp-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feelslike-value {
+    font-size: 16px;
+}
+
+.mode-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mode-container span {
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mode-container span:hover {
+    background-color: var(--background-color);
+}
+
+.mode-selected {
+    border-bottom: 2px solid var(--selected-color);
+    color: var(--selected-color);
+}
+

@@ -2,12 +2,62 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  --primary-color: rgb(67, 155, 255);
+  --selected-color: rgb(54, 124, 204);
+  --card-color: white;
+  --background-color: rgb(232, 232, 232);
 }
 
-.App {
-  font-family: Verdana;
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 body {
   min-width: fit-content;
+  background-color: var(--background-color);
+}
+
+.App {
+  height: 100vh;
+  font-family: Verdana;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.Tempurature {
+  grid-row: 1 / 4;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+
+.header h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  position: relative;
+  bottom: 0;
 }
