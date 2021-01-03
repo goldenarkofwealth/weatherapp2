@@ -2,15 +2,21 @@
     color: var(--primary-color);
 }
 
-.tempurature-container {
-    background-color: var(--card-color);
+.mastercard-container {
     height: 100%;
+    background-color: var(--card-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+}
+
+.tempurature-container {
+    height: 100%;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
-    margin: 10px;
-    box-shadow: 4px 4px rgb(204, 204, 204);
 }
 
 .maintemp-container {
@@ -64,3 +70,27 @@
     color: var(--selected-color);
 }
 
+.weathercard-container {
+    margin: 30px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid var(--primary-color);
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    font-size: 60px;
+    padding: 20px 0;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+}

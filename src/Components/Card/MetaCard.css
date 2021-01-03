@@ -1,0 +1,32 @@
+.metacard-container {
+    background-color: var(--card-color);
+    padding: 15px 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgb(204, 204, 204);
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-container li {
+    padding: 5px 15px;
+    font-size: 16px;
+    list-style: none;
+}
+
+.cityvalue-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cityvalue-container span {
+    padding: 10px 0;
+}
